@@ -1,5 +1,5 @@
 ﻿body {
-    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -7,4 +7,40 @@
     .nav-link {
         padding: 35px;
     }
+    h1 {
+        padding-bottom: 2rem;
+    }
+}
+
+/*.navbar {
+    background: none;
+}*/
+
+.navbar {
+    background-color: black;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.jumbotron {
+    padding-top: 6.5rem;
+    padding-bottom: 10rem;
+    background-image: url("../images/trafic3.jpeg");
+    background-size: cover;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.projects {
+    padding: 3rem;
+}
+
+footer {
+    background: #6c757d;
+    padding: 50px;
 }
