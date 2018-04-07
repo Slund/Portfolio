@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
     <link href="~/Content/Site.css" rel="stylesheet" />
@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     @*@Styles.Render("~/Content/css")
         @Scripts.Render("~/bundles/modernizr")*@
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
     <title>Søren Ravn Lund, Webudvikler, Aarhus</title>
 </head>
@@ -46,13 +49,21 @@
 
     <!-- Full width Map -->
     <div class="container-fluid" id="map">
-        <iframe src="https://snazzymaps.com/embed/62698" width="100%" height="600px" style="border:none;"></iframe>
+        <iframe src="https://snazzymaps.com/embed/62698"></iframe>
     </div>
 
     <div class="container contact">
         <div class="row">
-            <div class="col-sm-3 profile">
-                Profile
+            <div class="col-sm-3 profile text-center">
+                <img src="~/images/Profil.jpg" class="rounded-circle" alt="Søren Ravn Lund" /><br />
+                <button type="button" class="btn btn-danger btn-sm">+45 6012 2748</button>
+                <br />
+                <div class="col-12 icons">
+                    <a href="https://github.com/Slund"><i class="fab fa-github fa-2x pr-2"></i></a>
+                    <a href="https://www.linkedin.com/in/srlund/"><i class="fab fa-linkedin fa-2x pr-2"></i></a>
+                    <a href="mailto:slundmain@gmail.com"><i class="fas fa-envelope fa-2x pr-2"></i></a>
+</div>
+
             </div>
             <div class="col-sm-9">
                 @Html.Partial("_ContactForm")
