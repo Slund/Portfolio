@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Portfolio.ViewModels;
+using System.Net.Mail;
 
 namespace Portfolio.Controllers
 {
@@ -13,18 +15,32 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [HttpPost]
+        public ActionResult HandleForm(ContactForm model)
         {
-            ViewBag.Message = "Your application description page.";
+            if (!ModelState.IsValid)
+                return View("Index", model);
 
-            return View();
-        }
+            MailMessage message = new MailMessage();
+            message.To.Add("slundmain@gmail.com");
+            message.Subject = model.Phone;
+            message.From = new MailAddress(model.Email, model.Name);
+            message.Body = model.Message;
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            using (SmtpClient smtp = new SmtpClient())
+            {
+                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                smtp.UseDefaultCredentials = false;
+                smtp.EnableSsl = true;
+                smtp.Host = "smtp.gmail.com";
+                smtp.Port = 587;
+                smtp.Credentials = new System.Net.NetworkCredential("supernemathuske@gmail.com", "Hejumbraco123");
+                smtp.EnableSsl = true;
+                // send mail
+                smtp.Send(message);
+            }
 
-            return View();
+            return View("Index");
         }
     }
 }
