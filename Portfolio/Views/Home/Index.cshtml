@@ -6,14 +6,14 @@
     <div class="container">
         <h1><b>Passionate Web Developer.</b></h1>
         <p>Living in Aarhus. Currently Backend focused but also exploring the field of Frontend. If you are an employer looking for a passionate student worker or intern, you can get in touch with me here.</p>
-        <a href="#" class="btn btn-primary btn-lg">Tell me more <b>></b></a>
-        <a href="#" class="btn btn-primary btn-lg">I'm looking to hire <b>></b></a>
+        <a href="#" class="btn btn-primary btn-lg">I'm looking to hire &raquo;</a>
     </div>
 </div>
 
+<!-- Project Section -->
 <div class="container projects">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="project col-md-12 col-lg-6">
             <h2>Project 1</h2>
             <p>
                 ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
@@ -22,20 +22,45 @@
             </p>
             <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
         </div>
-        <div class="col-sm-6">
+        <div class="project col-md-12 col-lg-6">
             <h2>Project 1</h2>
             <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
             <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
         </div>
-        <div class="col-sm-6">
+        <div class="project col-md-12 col-lg-6">
             <h2>Project 1</h2>
             <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
             <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
         </div>
-        <div class="col-sm-6">
+        <div class="project col-md-12 col-lg-6">
             <h2>Project 1</h2>
             <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
             <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Full width Map -->
+<div class="container-fluid" id="map">
+    <iframe src="https://snazzymaps.com/embed/62698"></iframe>
+</div>
+
+<!-- Profile and Contact Section -->
+<div class="container contact">
+    <div class="row">
+        <div class="col-sm-3 profile text-center">
+            <img src="~/images/Profil.jpg" class="rounded-circle" alt="Søren Ravn Lund" /><br />
+            <button type="button" class="btn btn-danger btn-sm">+45 6012 2748</button>
+            <br />
+            <div class="col-12 icons">
+                <a href="https://github.com/Slund"><i class="fab fa-github fa-2x pr-2"></i></a>
+                <a href="https://www.linkedin.com/in/srlund/"><i class="fab fa-linkedin fa-2x pr-2"></i></a>
+                <a href="mailto:slundmain@gmail.com"><i class="fas fa-envelope fa-2x pr-2"></i></a>
+            </div>
+
+        </div>
+        <div class="col-sm-9">
+            @Html.Partial("_ContactForm")
         </div>
     </div>
 </div>

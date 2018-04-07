@@ -2,22 +2,28 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-    .nav-link {
-        padding: 35px;
-    }
-    h1 {
-        padding-bottom: 2rem;
-    }
-}
-
-/*.navbar {
-    background: none;
-}*/
-
 .navbar {
     background-color: black;
+    opacity: 0.85;
+    padding: 0 1rem;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.nav-item {
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    border-bottom: 2px solid #F23219;
+}
+
+.navbar-brand {
+    font-weight: bold;
 }
 
 .container {
@@ -37,10 +43,13 @@
 }
 
 .jumbotron {
-    padding-top: 6.5rem;
-    padding-bottom: 10rem;
-    background-image: url("../images/bridge.jpg");
+    padding-top: 20rem;
+    padding-bottom: 13rem;
+    background-image: url("../images/bridge3.jpg");
     background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
 }
 
 .jumbotron h1 {
@@ -56,6 +65,11 @@
 }
 
 .projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects .project {
     padding: 3rem;
 }
 
@@ -72,8 +86,6 @@
     border-color:lightgrey;
 }.contact {
     padding: 40px;
-}.contact .profile {
-    /*background-color: deepskyblue;*/
 }
 
 .contact .profile img {
@@ -95,10 +107,40 @@
     color: #F23219;
 }
 footer {
-    background-color: gainsboro;
-    padding: 100px;
+    background-color: lightgray;
+    opacity: 0.6;
+    padding: 75px;
 }
 
 footer p {
     margin: 0;
+}
+
+/*Extra small devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap*/
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .nav-link {
+        padding: 35px;
+    }
+
+    h1 {
+        padding-bottom: 2rem;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    .projects {
+        text-align: left;
+    }
+
+    .jumbotron {
+        text-align: left;
+    }
 }
