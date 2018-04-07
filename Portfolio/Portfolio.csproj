@@ -173,6 +173,7 @@
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="images\bridge3.jpg" />
     <Content Include="images\Logo.png" />
+    <Content Include="images\logo2.png" />
     <Content Include="images\Profil.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
