@@ -42,11 +42,18 @@
 
 #map {
     width: 100%;
-    height: 500px;
+    height: 600px;
     padding: 0px 0px;
+}.contact {
+    padding: 20px;
+}.contact .profile {
+    background-color: deepskyblue;
 }
 footer {
-    background: #6c757d;
+    background-color: gainsboro;
     padding: 100px;
 }
 
+footer p {
+    margin: 0;
+}

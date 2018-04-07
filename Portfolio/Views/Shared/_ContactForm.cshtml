@@ -1,0 +1,41 @@
+﻿@model Portfolio.ViewModels.ContactForm
+
+@{
+    Layout = null;
+}
+
+@*@if (TempData["success"] == null)
+{*@
+    @using (Html.BeginForm())
+    {
+        <div class="form-row">
+            <div class="form-group col-sm-12 col-md-4">
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control", placeholder = "Name" })
+                @Html.ValidationMessageFor(m => m.Name)
+            </div>
+            <div class="form-group col-sm-12 col-md-4">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                @Html.ValidationMessageFor(m => m.Email)
+            </div>
+            <div class="form-group col-sm-12 col-md-4">
+                @Html.TextBoxFor(m => m.Phone, new { @class = "form-control", placeholder = "Subject" })
+                @Html.ValidationMessageFor(m => m.Phone)
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-12">
+                @Html.TextAreaFor(m => m.Message, new { @class = "form-control", placeholder = "Message", rows = "5"})
+                @Html.ValidationMessageFor(m => m.Message)
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-2 ml-auto">
+                <button id="contact-submit" type="submit" class="btn btn-primary float-right">SEND</button>
+            </div>
+        </div>
+    }
+@*}
+else
+{
+    <p>Thank you for contacting us. We'll be in touch soon!</p>
+}*@
