@@ -9,17 +9,19 @@
 }
 
 .navbar-brand img {
-    height: 50px;
+    height: 75px;
 }
 
-.nav-item {
+.nav-link {
     font-weight: bold;
     font-size: 0.8rem;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
+    color: #fff;
 }
 
-.nav-item:hover {
-    border-bottom: 2px solid #F23219;
+.navbar-nav .active > .nav-link,
+.navbar-nav .nav-link.active {
+    border-bottom: 3px solid #F23219;
 }
 
 .navbar-brand {
@@ -85,7 +87,7 @@
     border-width:0.5px;
     border-color:lightgrey;
 }.contact {
-    padding: 40px;
+    padding: 75px;
 }
 
 .contact .profile img {
