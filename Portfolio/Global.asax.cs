@@ -12,6 +12,8 @@ namespace Portfolio
     {
         protected void Application_Start()
         {
+            // Enforces HTTPS
+            GlobalFilters.Filters.Add(new RequireHttpsAttribute());
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
