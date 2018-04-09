@@ -1,24 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="~/Content/Site.css" rel="stylesheet" />
-    <!-- Open Sans, To be Downloaded.. -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-
-    <!-- Font Awesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-
-    @*@Styles.Render("~/Content/css")
-        @Scripts.Render("~/bundles/modernizr")*@
-
-    <title>Søren Lund | Web Developer, Aarhus</title>
-
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NW83HHV');</script>
+    <!-- End Google Tag Manager -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117161187-1"></script>
     <script>
@@ -29,9 +22,36 @@
         gtag('config', 'UA-117161187-1');
     </script>
 
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Aarhus based Web Developer looking for a student job. Ambitious as the universe is large, on a mission to improve beyound measure.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,ASP.NET,WebDeveloper,Aarhus">
+    <meta name="author" content="Søren Lund">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!-- Open Sans, To be Downloaded.. -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    <title>Søren Lund | Web Developer, Aarhus</title>
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW83HHV"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header id="top">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container">
@@ -62,7 +82,7 @@
     @RenderBody()
 
     <footer class="container-fluid d-flex justify-content-center">
-        <p>&copy; SRLUND.DK @DateTime.Now.Year - <a href="#">GITHUB</a></p>
+        <p>&copy; SRLUND.DK @DateTime.Now.Year</p>
     </footer>
 
     <!-- Optional JavaScript -->
