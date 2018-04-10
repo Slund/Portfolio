@@ -2,6 +2,7 @@
     ViewBag.Title = "Søren Lund";
 }
 
+
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1><b>Passionate Web Developer.</b></h1>
@@ -9,6 +10,31 @@
         <a href="#contact" class="btn btn-primary btn-lg">Contact me now &raquo;</a>
     </div>
 </div>
+
+@if (TempData["success"] != null)
+{
+
+    <div class="modal" id="thankYouModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Thank you for contacting me. I'll back to you soon!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('#thankYouModal').modal();
+        });    
+    </script>
+}
 
 <!-- Project Section -->
 <div id="projects" class="container projects">
@@ -62,7 +88,7 @@
                                         <p>
                                             A attendance system built in .NET for schools allowing students to check-in to lectures and the teachers to monitor their attendance.
                                             I primarily worked on accessing relational data from the tabels by creating ViewModels and utilizing navigation properties to get the appropiate data.
-                                            We were challenged by our domain model design and how to version control with LocalDB for different migrations of the database. 
+                                            We were challenged by our domain model design and how to version control with LocalDB for different migrations of the database.
                                         </p>
                                     </div>
                                 </div>
@@ -125,7 +151,7 @@
                                     <div class="col-12 col-lg-5">
                                         <h3 class="modal-title">WebDevs Aarhus</h3>
                                         <p>
-                                            A ASP.NET project for testing out Umbraco and the core functionalities of the CMS. 
+                                            A ASP.NET project for testing out Umbraco and the core functionalities of the CMS.
                                             The most challeging part have been to understand how the CMS extends the normal way ASP.NET functions e.g. with SurfaceControllers, luckily great resources are available.
                                         </p>
                                     </div>
@@ -189,7 +215,7 @@
                                     <div class="col-12 col-lg-5">
                                         <h3 class="modal-title">Space Pirates</h3>
                                         <p>
-                                            A really challenging project with a lot of ambitions from the beginning. 
+                                            A really challenging project with a lot of ambitions from the beginning.
                                             The hardest parts were to program the 'AI' of the enemies, programming of events and the weapons/bullets as well as the import and animation of the weapon which was made in Blender.
                                             A lot of trial and error in a time restricted project.
                                         </p>
@@ -216,8 +242,11 @@
 <div id="contact" class="container contact">
     <div class="row">
         <div class="col-sm-3 profile text-center">
-            <img src="~/images/SoerenLundProfile.jpg" class="rounded-circle" alt="Søren Ravn Lund" /><br />
-            <button type="button" class="btn btn-danger btn-sm">+45 6012 2748</button>
+            <img src="~/images/SoerenLundProfile.jpg" class="rounded-circle" alt="Søren Ravn Lund" />
+            <br />
+            <a href="tel:60122748" class="btn btn-danger btn-sm">
+                +45 6012 2748
+            </a>
             <br />
             <div class="col-12 icons">
                 <a href="https://github.com/Slund"><i class="fab fa-github fa-2x pr-2"></i></a>

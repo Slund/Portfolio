@@ -40,6 +40,7 @@ namespace Portfolio.Controllers
                 smtp.Send(message);
             }
 
+            TempData["success"] = true;
             return View("Index");
         }
     }
