@@ -23,9 +23,9 @@ namespace Portfolio.Controllers
 
             MailMessage message = new MailMessage();
             message.To.Add("slundmain@gmail.com");
-            message.Subject = model.Phone;
+            message.Subject = "Besked fra srlund.dk";
             message.From = new MailAddress(model.Email, model.Name);
-            message.Body = model.Message;
+            message.Body = "Besked: " + model.Message + " Tlf.:" + model.Phone + " Email: " + model.Email;
 
             using (SmtpClient smtp = new SmtpClient())
             {

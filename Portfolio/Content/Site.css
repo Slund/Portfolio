@@ -61,8 +61,6 @@
 }
 
 .jumbotron p {
-    /*font-size: 3rem;
-    font-weight: bold;*/
     color: whitesmoke;
 }
 
@@ -81,6 +79,10 @@
 
 .modal-title {
     color: #F23219;
+}
+
+.modal-footer {
+    border: none;
 }
 
 .projects {
@@ -107,9 +109,6 @@
     background-color: black;
 }
 
-.modal-footer {
-    border: none;
-}
 
 #map {
     width: 100%;

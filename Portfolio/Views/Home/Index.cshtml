@@ -1,8 +1,4 @@
-﻿@{
-    ViewBag.Title = "Søren Lund";
-}
-
-
+﻿<!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1><b>Passionate Web Developer.</b></h1>
@@ -11,9 +7,9 @@
     </div>
 </div>
 
+<!-- Form Submission Thank You -->
 @if (TempData["success"] != null)
 {
-
     <div class="modal" id="thankYouModal" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -32,7 +28,7 @@
     <script>
         $(document).ready(function () {
             $('#thankYouModal').modal();
-        });    
+        });
     </script>
 }
 
@@ -103,6 +99,7 @@
             </div>
         </div>
     </div>
+    <hr />
     <div class="row project">
         <div class="col-12 col-md-6">
             <img src="~/images/WebDevsUmbraco.jpg" alt="WebDevs UmbracoCMS" class="img-fluid" />
@@ -167,6 +164,7 @@
             </div>
         </div>
     </div>
+    <hr />
     <div class="row project">
         <div class="col-12 col-md-6">
             <img src="~/images/SpacePiratesStart.jpg" alt="SpacePirates Start" class="img-fluid" />
