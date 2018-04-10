@@ -12,6 +12,7 @@ namespace Portfolio
     {
         protected void Application_Start()
         {
+            // Disabled in production
             // Enforces HTTPS
             GlobalFilters.Filters.Add(new RequireHttpsAttribute());
             AreaRegistration.RegisterAllAreas();

@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || []; w[l].push({
-                    'gtm.start':
-                        new Date().getTime(), event: 'gtm.js'
-                }); var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-NW83HHV');</script>
-        <!-- End Google Tag Manager -->
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117161187-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NW83HHV');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117161187-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-            gtag('config', 'UA-117161187-1');
-        </script>
+        gtag('config', 'UA-117161187-1');
+    </script>
 
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -29,16 +29,12 @@
     <meta name="author" content="Søren Lund">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
-    <!-- Custom CSS -->
-    <link href="~/Content/Site.css" rel="stylesheet" />
-    <!-- Open Sans, To be Downloaded.. -->
+    <!-- CSS Styles-->
+    @Styles.Render("~/Content/css")
+    <!-- Open Sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <!-- Font Awesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-    <!-- jQuery -->
-    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
 
     <title>Søren Lund | Web Developer, Aarhus</title>
 </head>
@@ -84,11 +80,18 @@
         <p>&copy; SRLUND.DK @DateTime.Now.Year</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
-    <script src="~/Scripts/scrolling.js"></script>
+    <!-- JavaScript, validation & Bootstrap -->
+    @Scripts.Render("~/bundles/jQuery-and-validation")
+    @Scripts.Render("~/bundles/bootstrap")
+    @if (TempData["success"] != null)
+    {
+        <script>
+            $(document).ready(function () {
+                $('#thankYouModal').modal();
+            });
+        </script>
+    }
+    @RenderSection("Scripts", false)
 
 </body>
 </html>
