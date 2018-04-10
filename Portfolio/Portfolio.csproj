@@ -171,6 +171,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="images\AmajohnCart.jpg" />
+    <Content Include="images\AmajohnCheckout.jpg" />
+    <Content Include="images\AmajohnStart.jpg" />
     <Content Include="images\AttendifyDashboard.jpg" />
     <Content Include="images\AttendifyLogin.jpg" />
     <Content Include="images\AttendifyRelationalSelect.jpg" />
