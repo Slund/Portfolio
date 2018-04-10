@@ -66,13 +66,49 @@
     color: whitesmoke;
 }
 
+/* Modal Custom Styling */
+@media (min-width: 576px) {
+    .modal-lg {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 1100px;
+    }
+}
+
+.modal-title {
+    color: #F23219;
+}
+
 .projects {
-    padding: 2rem;
-    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project .div img {
+    align-items: center;
 }
 
 .projects .project {
     padding: 3rem;
+}
+
+.carousel-item {
+    height: 350px;
+}
+
+.carousel-indicators .active {
+    background-color: #F23219;
+}
+
+.carousel-indicators > li {
+    background-color: black;
+}
+
+.modal-footer {
+    border: none;
 }
 
 #map {
@@ -86,7 +122,9 @@
     height:100%;
     border-width:0.5px;
     border-color:lightgrey;
-}.contact {
+}
+
+.contact {
     padding: 75px;
 }
 
@@ -107,7 +145,8 @@
 
 .contact .profile .icons svg {
     color: #F23219;
-}
+}
+
 footer {
     background-color: lightgray;
     opacity: 0.6;
