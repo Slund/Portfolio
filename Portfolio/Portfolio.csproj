@@ -171,10 +171,18 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="images\bridge3.jpg" />
-    <Content Include="images\Logo.png" />
-    <Content Include="images\logo2.png" />
-    <Content Include="images\Profil.jpg" />
+    <Content Include="images\AttendifyDashboard.jpg" />
+    <Content Include="images\AttendifyLogin.jpg" />
+    <Content Include="images\AttendifyRelationalSelect.jpg" />
+    <Content Include="images\RinggadebroenAarhus.jpg" />
+    <Content Include="images\SoerenLundProfile.jpg" />
+    <Content Include="images\SoerenLundWebDeveloper.png" />
+    <Content Include="images\SpacePiratesBossSkeleton.jpg" />
+    <Content Include="images\SpacePiratesEnimies.jpg" />
+    <Content Include="images\SpacePiratesStart.jpg" />
+    <Content Include="images\WebDevsUmbraco.jpg" />
+    <Content Include="images\WebDevsUmbracoBackoffice.jpg" />
+    <Content Include="images\WebDevsUmbracoNavigationMenu.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -216,7 +224,9 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

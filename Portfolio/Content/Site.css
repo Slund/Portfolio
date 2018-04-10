@@ -133,10 +133,9 @@
     width: 125px;
 }
 
-.contact .profile button {
+.contact .profile a {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 125px;
 }
 
 .contact .profile .icons {
@@ -145,6 +144,10 @@
 
 .contact .profile .icons svg {
     color: #F23219;
+}
+
+.field-validation-error {
+    color: red;
 }
 
 footer {
