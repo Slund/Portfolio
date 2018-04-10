@@ -2,7 +2,9 @@
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
         <h1><b>Passionate Web Developer.</b></h1>
-        <p>Living in Aarhus. Currently Backend focused but also exploring the field of Frontend. If you are an employer looking for a passionate student worker or intern, you can get in touch with me here.</p>
+        <p>
+            Living in Aarhus. Currently studying at Business Academy Aarhus and looking for a Studyjob and Internship. 
+            Backend focused but also exploring the field of Frontend. You can get in touch with me here.</p>
         <a href="#contact" class="btn btn-primary btn-lg">Contact me now &raquo;</a>
     </div>
 </div>
@@ -33,203 +35,274 @@
 }
 
 <!-- Project Section -->
-<div id="projects" class="container projects">
-    <div class="row project">
-        <div class="col-12 col-md-6">
-            <img src="~/images/AttendifyDashboard.jpg" alt="Attendify Dashboard" class="img-fluid" />
-        </div>
-        <div class="col-12 col-md-6">
-            <h2>Attendify</h2>
-            <p>
-                ASP.NET Project using Entity Framework. Attendance system for schools to provide an easier method of registering attendance.
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#AttendifyModal">Learn more &raquo;</button>
+ <div id="projects" class="container projects">
+        <div class="row project">
+            <div class="col-12 col-md-6">
+                <img src="~/images/AttendifyDashboard.jpg" alt="Attendify Dashboard" class="img-fluid" />
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Attendify</h2>
+                <p>
+                    ASP.NET Project using Entity Framework. Attendance system for schools to provide an easier method of registering attendance.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#AttendifyModal">Learn more &raquo;</button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="AttendifyModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-lg-7">
-                                        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselIndicators" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/AttendifyLogin.jpg" alt="Attendify Login">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/AttendifyDashboard.jpg" alt="Attendify Dashboard">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/AttendifyRelationalSelect.jpg" alt="Attendify Relational Select">
+                <!-- Modal -->
+                <div class="modal fade" id="AttendifyModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <div id="carouselIndicatorsAttendify" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselIndicatorsAttendify" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselIndicatorsAttendify" data-slide-to="1"></li>
+                                                    <li data-target="#carouselIndicatorsAttendify" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/AttendifyLogin.jpg" alt="Attendify Login">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/AttendifyDashboard.jpg" alt="Attendify Dashboard">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/AttendifyRelationalSelect.jpg" alt="Attendify Relational Select">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-12 col-lg-5">
-                                        <h3 class="modal-title">Attendify</h3>
-                                        <p>
-                                            A attendance system built in .NET for schools allowing students to check-in to lectures and the teachers to monitor their attendance.
-                                            I primarily worked on accessing relational data from the tabels by creating ViewModels and utilizing navigation properties to get the appropiate data.
-                                            We were challenged by our domain model design and how to version control with LocalDB for different migrations of the database.
-                                        </p>
+                                        <div class="col-12 col-lg-5">
+                                            <h3 class="modal-title">Attendify</h3>
+                                            <p>
+                                                A attendance system built in ASP.NET MVC for schools allowing students to check-in to lectures and the teachers to monitor their attendance.
+                                                I primarily worked on accessing relational data from the tabels by creating ViewModels and utilizing navigation properties to get the appropiate data.
+                                                We were challenged by our domain model design, iterating this, and how to version control our LocalDB setup for different migrations of the database.
+                                                It would definetely have been more convenient to have an online database for production.
+                                                I gained a lot of experience with Entity Frameworks and how to work with a database in the Backend.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://github.com/Slund/Attendify" class="btn">View on Github</a>
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                <div class="modal-footer">
+                                    <a href="https://github.com/Slund/Attendify" class="btn">View on Github</a>
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr />
-    <div class="row project">
-        <div class="col-12 col-md-6">
-            <img src="~/images/WebDevsUmbraco.jpg" alt="WebDevs UmbracoCMS" class="img-fluid" />
-        </div>
-        <div class="col-12 col-md-6">
-            <h2>WebDevs Aarhus</h2>
-            <p>
-                A project exploring the core functions and the extensibility of the Umbraco CMS.
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#UmbracoModal">Learn more &raquo;</button>
+        <hr />
+        <div class="row project">
+            <div class="col-12 col-md-6">
+                <img src="~/images/AmajohnStart.jpg" alt="Amajohn Start" class="img-fluid" />
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Amajohn Webshop</h2>
+                <p>
+                    ASP.NET Project building the fundations of a Webshop with Cart funtionality and dynamic Catalogue.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#AmajohnModal">Learn more &raquo;</button>
 
-            <!-- Modal -->
-            <div class="modal fade" id="UmbracoModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-lg-7">
-                                        <div id="carouselIndicatorsUmbraco" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselIndicatorsUmbraco" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carouselIndicatorsUmbraco" data-slide-to="1"></li>
-                                                <li data-target="#carouselIndicatorsUmbraco" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/WebDevsUmbraco.jpg" alt="WebDevs UmbracoCMS">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/WebDevsUmbracoBackoffice.jpg" alt="WebDevs Umbraco Backoffice">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/WebDevsUmbracoNavigationMenu.jpg" alt="WebDevs Umbraco NavigationMenu">
+                <!-- Modal -->
+                <div class="modal fade" id="AmajohnModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <div id="carouselIndicatorsAmajohn" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselIndicatorsAmajohn" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselIndicatorsAmajohn" data-slide-to="1"></li>
+                                                    <li data-target="#carouselIndicatorsAmajohn" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/AmajohnStart.jpg" alt="Attendify Login">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/AmajohnCart.jpg" alt="Attendify Dashboard">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/AmajohnCheckout.jpg" alt="Attendify Relational Select">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-12 col-lg-5">
-                                        <h3 class="modal-title">WebDevs Aarhus</h3>
-                                        <p>
-                                            A ASP.NET project for testing out Umbraco and the core functionalities of the CMS.
-                                            The most challeging part have been to understand how the CMS extends the normal way ASP.NET functions e.g. with SurfaceControllers, luckily great resources are available.
-                                        </p>
+                                        <div class="col-12 col-lg-5">
+                                            <h3 class="modal-title">Amajohn Webshop</h3>
+                                            <p>
+                                                The project is built utilizing the full potential of the ASP.NET framework.
+                                                The most advanced functions are the custom helper method and model binder. 
+                                                It took a long time to really understand how it should work properly and came down to carefully looking at inherited class references and examples over and over.
+                                                The project has deepened my understanding of Object Oriented Programming, the .NET framework and its capabilities.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="https://github.com/Slund/UmbracoWebDev" class="btn">View on Github</a>
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                <div class="modal-footer">
+                                    <a href="https://github.com/Slund/Amajohn" class="btn">View on Github</a>
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <hr />
-    <div class="row project">
-        <div class="col-12 col-md-6">
-            <img src="~/images/SpacePiratesStart.jpg" alt="SpacePirates Start" class="img-fluid" />
-        </div>
-        <div class="col-12 col-md-6">
-            <h2>Space Pirates</h2>
-            <p>
-                Game development project made with Unity and C#. First-person-shooter with basic AI enemies. Made by a team of three where I was responsible for the programming.
-            </p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#spacePiratesModal">Learn more &raquo;</button>
+        <hr />
+        <div class="row project">
+            <div class="col-12 col-md-6">
+                <img src="~/images/WebDevsUmbraco.jpg" alt="WebDevs UmbracoCMS" class="img-fluid" />
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>WebDevs Aarhus</h2>
+                <p>
+                    A project exploring the core functions and the extensibility of the Umbraco CMS.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#UmbracoModal">Learn more &raquo;</button>
 
-            <!-- Space Pirates Modal -->
-            <div class="modal fade" id="spacePiratesModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-12 col-lg-7">
-                                        <div id="carouselIndicatorsSpace" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselIndicatorsSpace" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carouselIndicatorsSpace" data-slide-to="1"></li>
-                                                <li data-target="#carouselIndicatorsSpace" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/SpacePiratesStart.jpg" alt="SpacePirates Start">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/SpacePiratesEnimies.jpg" alt="SpacePirates Enimies">
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <img class="d-block w-100 img-fluid" src="~/images/SpacePiratesBossSkeleton.jpg" alt="SpacePirates Boss Skeleton">
+                <!-- Modal -->
+                <div class="modal fade" id="UmbracoModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <div id="carouselIndicatorsUmbraco" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselIndicatorsUmbraco" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselIndicatorsUmbraco" data-slide-to="1"></li>
+                                                    <li data-target="#carouselIndicatorsUmbraco" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/WebDevsUmbraco.jpg" alt="WebDevs UmbracoCMS">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/WebDevsUmbracoBackoffice.jpg" alt="WebDevs Umbraco Backoffice">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/WebDevsUmbracoNavigationMenu.jpg" alt="WebDevs Umbraco NavigationMenu">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <div class="col-12 col-lg-5">
-                                        <h3 class="modal-title">Space Pirates</h3>
-                                        <p>
-                                            A really challenging project with a lot of ambitions from the beginning.
-                                            The hardest parts were to program the 'AI' of the enemies, programming of events and the weapons/bullets as well as the import and animation of the weapon which was made in Blender.
-                                            A lot of trial and error in a time restricted project.
-                                        </p>
+                                        <div class="col-12 col-lg-5">
+                                            <h3 class="modal-title">WebDevs Aarhus</h3>
+                                            <p>
+                                                A ASP.NET project for testing out Umbraco and the core functionalities of the CMS.
+                                                The most challenging, and exicting, part have been to discover how Umbraco extends the normal way ASP.NET functions with the Umbraco Namespace and how to customize and build Document Types, Templates, Partials, Macros, Editors etc.
+                                                Luckily, great resource is available.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                <div class="modal-footer">
+                                    <a href="https://github.com/Slund/UmbracoWebDev" class="btn">View on Github</a>
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <hr />
+        <div class="row project">
+            <div class="col-12 col-md-6">
+                <img src="~/images/SpacePiratesStart.jpg" alt="SpacePirates Start" class="img-fluid" />
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Space Pirates</h2>
+                <p>
+                    Game development project made with Unity and C#. First-person-shooter with basic AI enemies. Made by a team of three where I was responsible for the programming.
+                </p>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#spacePiratesModal">Learn more &raquo;</button>
+
+                <!-- Space Pirates Modal -->
+                <div class="modal fade" id="spacePiratesModal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-7">
+                                            <div id="carouselIndicatorsSpace" class="carousel slide" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselIndicatorsSpace" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselIndicatorsSpace" data-slide-to="1"></li>
+                                                    <li data-target="#carouselIndicatorsSpace" data-slide-to="2"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/SpacePiratesStart.jpg" alt="SpacePirates Start">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/SpacePiratesEnimies.jpg" alt="SpacePirates Enimies">
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100 img-fluid" src="~/images/SpacePiratesBossSkeleton.jpg" alt="SpacePirates Boss Skeleton">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-lg-5">
+                                            <h3 class="modal-title">Space Pirates</h3>
+                                            <p>
+                                                A FPS built in Unity with C# programming. A really challenging project due to big goals from the team.
+                                                The hardest parts were to program the 'AI' of the enemies, the game-events and the weapon.
+                                                For the AI, we ended up with the built-in NavMeshAgent scripting API after trying a few different script packages.
+                                                Getting gun animations and scripts to function also caused trouble, ultimately it came down to persistence and seeking out help online and from peers.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
 
 <!-- Profile and Contact Section -->
 <!-- Full width Map -->
