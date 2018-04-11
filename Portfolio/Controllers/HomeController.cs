@@ -15,33 +15,43 @@ namespace Portfolio.Controllers
             return View();
         }
 
+        public ActionResult HandleForm()
+        {
+            return RedirectToAction("Index");
+        }
+
+
         [HttpPost]
         public ActionResult HandleForm(ContactForm model)
         {
-            if (!ModelState.IsValid)
+            if (!ModelState.IsValid) { 
+                TempData["fail"] = true;
                 return View("Index", model);
-
-            MailMessage message = new MailMessage();
-            message.To.Add("slundmain@gmail.com");
-            message.Subject = "Besked fra srlund.dk";
-            message.From = new MailAddress(model.Email, model.Name);
-            message.Body = "Besked: " + model.Message + " Tlf.:" + model.Phone + " Email: " + model.Email;
-
-            using (SmtpClient smtp = new SmtpClient())
-            {
-                smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-                smtp.UseDefaultCredentials = false;
-                smtp.EnableSsl = true;
-                smtp.Host = "smtp.gmail.com";
-                smtp.Port = 587;
-                smtp.Credentials = new System.Net.NetworkCredential("supernemathuske@gmail.com", "Hejumbraco123");
-                smtp.EnableSsl = true;
-                // send mail
-                smtp.Send(message);
             }
+            else
+            { 
+                MailMessage message = new MailMessage();
+                message.To.Add("slundmain@gmail.com");
+                message.Subject = "Besked fra SRLund.dk";
+                message.From = new MailAddress(model.Email, model.Name);
+                message.Body = "Besked: " + model.Message + " Tlf.:" + model.Phone + " Email: " + model.Email;
 
-            TempData["success"] = true;
-            return View("Index");
+                using (SmtpClient smtp = new SmtpClient())
+                {
+                    smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.EnableSsl = true;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.Credentials = new System.Net.NetworkCredential("supernemathuske@gmail.com", "Hejumbraco123");
+                    smtp.EnableSsl = true;
+                    // send mail
+                    smtp.Send(message);
+                }
+
+                TempData["success"] = true;
+                return RedirectToAction("Index");
+            }
         }
     }
 }

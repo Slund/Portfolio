@@ -83,6 +83,15 @@
     <!-- JavaScript, validation & Bootstrap -->
     @Scripts.Render("~/bundles/jQuery-and-validation")
     @Scripts.Render("~/bundles/bootstrap")
+    @if (TempData["fail"] != null)
+    {
+        <script>
+            $(document).ready(function () {
+                var anchor = document.getElementById('contact');
+                anchor.scrollIntoView(true);
+            });
+        </script>
+    }
     @if (TempData["success"] != null)
     {
         <script>
