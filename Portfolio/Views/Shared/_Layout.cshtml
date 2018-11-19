@@ -83,6 +83,13 @@
     <!-- JavaScript, validation & Bootstrap -->
     @Scripts.Render("~/bundles/jQuery-and-validation")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/map")
+
+
+    @*<script src="~/Scripts/map.js"></script>*@
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIPK1a-pLZwGaMb3b-WVWC1E5gO7Q21jQ&callback=initMap"
+            async defer></script>
+
     @if (TempData["fail"] != null)
     {
         <script>

@@ -23,6 +23,9 @@ namespace Portfolio
                       "~/Scripts/respond.js",
                       "~/Scripts/scrolling.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/map").Include(
+                      "~/Scripts/map.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
