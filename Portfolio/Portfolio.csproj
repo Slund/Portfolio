@@ -170,7 +170,6 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="images\AmajohnCart.jpg" />
     <Content Include="images\AmajohnCheckout.jpg" />
     <Content Include="images\AmajohnStart.jpg" />
@@ -202,6 +201,7 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <None Include="Properties\PublishProfiles\pre-optimization.srlund.dk.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
