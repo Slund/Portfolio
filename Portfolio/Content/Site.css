@@ -47,11 +47,18 @@
 .jumbotron {
     padding-top: 20rem;
     padding-bottom: 13rem;
-    background-image: url("../images/RinggadebroenAarhus.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     text-align: center;
+}
+
+.mod_no-webp .jumbotron {
+    background-image: url("../images/RinggadebroenAarhus.jpg");
+}
+
+.mod_webp .jumbotron {
+    background-image: url("../images/RinggadebroenAarhus.webp");
 }
 
 .jumbotron h1 {
